@@ -26,12 +26,29 @@ syn keyword chuckBoolean null NULL
 " https://chuck.cs.princeton.edu/doc/language/oper.html
 syn match chuckOperator "=>"
 syn match chuckOperator "@=>"
+
 syn match chuckOperator "=^"
+
 syn match chuckOperator "+"
 syn match chuckOperator "-"
 syn match chuckOperator "*"
 syn match chuckOperator "/"
 syn match chuckOperator "%"
+syn match chuckOperator "!"
+syn match chuckOperator "&"
+syn match chuckOperator "|"
+syn match chuckOperator "\^"
+
+syn match chuckOperator "+=>"
+syn match chuckOperator "-=>"
+syn match chuckOperator "*=>"
+syn match chuckOperator "/=>"
+syn match chuckOperator "%=>"
+syn match chuckOperator "!=>"
+syn match chuckOperator "&=>"
+syn match chuckOperator "|=>"
+syn match chuckOperator "\^=>"
+
 syn match chuckOperator "&&"
 syn match chuckOperator "||"
 syn match chuckOperator "=="
@@ -40,19 +57,16 @@ syn match chuckOperator ">"
 syn match chuckOperator ">="
 syn match chuckOperator "<"
 syn match chuckOperator "<="
+
 syn match chuckOperator ">>"
 syn match chuckOperator "<<"
-syn match chuckOperator "&"
-syn match chuckOperator "|"
-syn match chuckOperator "^"
+
 syn match chuckOperator "++"
 syn match chuckOperator "--"
-syn match chuckOperator "!"
-syn match chuckOperator "+"
-syn match chuckOperator "-"
-syn keyword chuckOperator new
 syn match chuckOperator "<<<"
 syn match chuckOperator ">>>"
+
+syn keyword chuckOperator new
 
 " https://chuck.cs.princeton.edu/doc/language/ctrl.html
 syn keyword chuckConditional if else
